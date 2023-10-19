@@ -8,7 +8,9 @@
 import Foundation
 
 final class UserManager: ObservableObject {
-    @Published var isLoggedIn = false
-    var name = ""
+    @Published var user = User()
     
+    var nameIsValid: Bool {
+        user.name.count > 2
+    }
 }

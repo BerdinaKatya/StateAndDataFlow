@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct User {
+    var name = ""
+    var isLoggedIn = false
+}

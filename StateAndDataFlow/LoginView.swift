@@ -9,27 +9,34 @@ import SwiftUI
 
 struct LoginView: View {
     @EnvironmentObject private var userManager: UserManager
-    @State private var name = ""
     
     var body: some View {
         VStack {
-            TextField("Enter your name...", text: $name)
-                .multilineTextAlignment(.center)
+            ZStack {
+                TextField("Enter your name...", text: $userManager.user.name)
+                    .multilineTextAlignment(.center)
+                HStack {
+                    Spacer()
+                    
+                    Text(String(userManager.user.name.count))
+                        .padding(.trailing, 20)
+                        .foregroundStyle(userManager.nameIsValid ? .green : .red)
+                }
+            }
             
             Button(action: login) {
                 Label("OK", systemImage: "checkmark.circle")
             }
+            .disabled(!userManager.nameIsValid)
         }
     }
     
     private func login() {
-        if !name.isEmpty {
-            userManager.name = name
-            userManager.isLoggedIn.toggle()
-        }
+        userManager.user.isLoggedIn.toggle()
     }
 }
 
 #Preview {
     LoginView()
+        .environmentObject(UserManager())
 }
