@@ -10,7 +10,6 @@ import Observation
 
 @Observable
 final class TimeCounter {
-    //let objectWillChange = ObservationRegistrar()
     var counter = 3
     var buttonTitle = "Start"
     
@@ -37,8 +36,6 @@ final class TimeCounter {
             killTimer()
             buttonTitle = "Reset"
         }
-        
-        //objectWillChange.send()
     }
     
     private func killTimer() {
@@ -53,7 +50,5 @@ final class TimeCounter {
         } else {
             buttonTitle = "Wait..."
         }
-        
-        //objectWillChange.send()
     }
 }

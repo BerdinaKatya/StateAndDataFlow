@@ -17,6 +17,7 @@
 		64CD9C4F2AE14022002A4BD3 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CD9C4E2AE14022002A4BD3 /* RootView.swift */; };
 		64CD9C512AE14CB1002A4BD3 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CD9C502AE14CB1002A4BD3 /* StorageManager.swift */; };
 		64CD9C532AE14D47002A4BD3 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CD9C522AE14D47002A4BD3 /* UserModel.swift */; };
+		64CD9C552AE1745F002A4BD3 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CD9C542AE1745E002A4BD3 /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		64CD9C4E2AE14022002A4BD3 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		64CD9C502AE14CB1002A4BD3 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		64CD9C522AE14D47002A4BD3 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		64CD9C542AE1745E002A4BD3 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				64CD9C4E2AE14022002A4BD3 /* RootView.swift */,
 				64CD9C4A2AE13D55002A4BD3 /* LoginView.swift */,
 				64CD9C3C2AE1304A002A4BD3 /* ContentView.swift */,
+				64CD9C542AE1745E002A4BD3 /* ButtonView.swift */,
 				64CD9C482AE134AC002A4BD3 /* TimeCounter.swift */,
 				64CD9C4C2AE13E40002A4BD3 /* UserManager.swift */,
 				64CD9C522AE14D47002A4BD3 /* UserModel.swift */,
@@ -163,6 +166,7 @@
 				64CD9C4B2AE13D55002A4BD3 /* LoginView.swift in Sources */,
 				64CD9C4D2AE13E40002A4BD3 /* UserManager.swift in Sources */,
 				64CD9C3B2AE1304A002A4BD3 /* StateAndDataFlowApp.swift in Sources */,
+				64CD9C552AE1745F002A4BD3 /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
