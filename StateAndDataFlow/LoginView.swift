@@ -33,6 +33,8 @@ struct LoginView: View {
     
     private func login() {
         userManager.user.isLoggedIn.toggle()
+        
+        StorageManager.shared.save(userManager)
     }
 }
 

@@ -8,10 +8,25 @@
 import Foundation
 import SwiftUI
 
-class StorageManager {
+final class StorageManager {
     
-    @AppStorage("userName") private var userName = ""
-    @AppStorage("isLoggedIn") private var isLoggedIn = false
+    static let shared = StorageManager()
     
+    @AppStorage("userName") var userName = ""
+    @AppStorage("isLoggedIn") var isLoggedIn = false
     
+    private init() {}
+    
+    func save(_ userManager: UserManager) {
+        userName = userManager.user.name
+        isLoggedIn = userManager.user.isLoggedIn
+    }
+    
+    func logOut(_ userManager: UserManager) {
+        userManager.user.name = ""
+        userManager.user.isLoggedIn = false
+        
+        userName = ""
+        isLoggedIn = false
+    }
 }

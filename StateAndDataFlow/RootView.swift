@@ -12,7 +12,7 @@ struct RootView: View {
     
     var body: some View {
         Group {
-            if userManager.user.isLoggedIn {
+            if StorageManager.shared.isLoggedIn {
                 ContentView()
             } else {
                 LoginView()
